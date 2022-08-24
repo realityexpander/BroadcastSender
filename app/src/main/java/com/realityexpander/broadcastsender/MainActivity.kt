@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-// Video Series: // Video series: https://www.youtube.com/watch?v=prueLyTvOwI&list=PLrnPJCHvNZuBqr_0AS9BPXgU6gvNeai5S
+// Video series: https://www.youtube.com/watch?v=prueLyTvOwI&list=PLrnPJCHvNZuBqr_0AS9BPXgU6gvNeai5S
 
 class MainActivity : AppCompatActivity() {
     private var textView: TextView? = null
