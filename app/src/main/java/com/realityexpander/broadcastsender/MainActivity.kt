@@ -51,9 +51,9 @@ class MainActivity : AppCompatActivity() {
             },
 
             null,
-            0,  // `resultCode` in the receiver
+            0,        // `resultCode` in the receiver
             "Start",  // `resultData` in the receiver
-            extras  // `getResultExtras` in the receiver
+            extras              // `getResultExtras` in the receiver
         )
     }
 }
