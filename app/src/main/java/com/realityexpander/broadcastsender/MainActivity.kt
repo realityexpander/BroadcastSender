@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         sendOrderedBroadcast(
             intent,
             null,
-            // SenderReceiver(),
 
 //            // Using interface and abstract class (Works, but ugly)
 //            object: SenderReceiver() {
@@ -50,6 +49,7 @@ class MainActivity : AppCompatActivity() {
             SenderReceiver { result ->
                 textView?.text = result
             },
+
             null,
             0,
             "Start",
