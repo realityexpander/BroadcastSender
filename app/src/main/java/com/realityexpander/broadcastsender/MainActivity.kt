@@ -1,5 +1,6 @@
 package com.realityexpander.broadcastsender
 
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -33,19 +34,19 @@ class MainActivity : AppCompatActivity() {
             null,
             // SenderReceiver(),
 
-            // Using interface and abstract class (Works, but ugly)
+//            // Using interface and abstract class (Works, but ugly)
 //            object: SenderReceiver() {
 //                override fun onResult(result: String) {
 //                    textView?.text = result
 //                }
 //            },
 
-            // Using lambda and abstract class (doesn't compile???)
+//            // Using lambda and abstract class (Works, used for overloading)
 //            object: SenderReceiver( { result ->
 //                textView?.text = result
-//            }),
+//            }){},
 
-            // Using lambda and Concrete class (Works)
+            // Using lambda and Concrete class (Cleanest, but cant override)
             SenderReceiver { result ->
                 textView?.text = result
             },

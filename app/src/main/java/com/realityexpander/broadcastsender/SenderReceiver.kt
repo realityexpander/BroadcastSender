@@ -13,6 +13,7 @@ interface ResultListener {
 }
 
 //abstract class SenderReceiver : BroadcastReceiver(), ResultListener {
+//abstract class SenderReceiver(private val onResult: ((String) -> Unit) ) : BroadcastReceiver() {
 class SenderReceiver(private val onResult: ((String) -> Unit) ) : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
